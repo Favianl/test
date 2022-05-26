@@ -3,8 +3,8 @@ pacman -S bspwm tilix rofi sxhkd pcmanfm lightdm lightdm-gtk-greeter neofetch ht
 cp -r .config/bspwm ~/.config
 cp -r .config/sxhkd ~/.config
 cp .xprofile ~/
-systemctl enable lightdm
-systemctl start lightdm
+sudo systemctl enable lightdm
+sudo systemctl start lightdm
 echo "==========="
 echo "Terminado"
 echo "==========="
