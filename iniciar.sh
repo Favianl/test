@@ -3,12 +3,15 @@ pacman -S bspwm tilix rofi sxhkd pcmanfm lightdm lightdm-gtk-greeter neofetch ht
 clear
 cp -r .config/bspwm ~/.config
 cp -r .config/sxhkd ~/.config
+cp -r .config/polybar ~/.config
+sudo chmod +x ~/.config/polybar/launch.sh
 cp .xprofile ~/
 cd /opt
 git clone https://aur.archlinux.org/yay-git.git
-sudo chown -R $USER:$USER ./yay-git
+sudo chown -R $USER:$USER yay-git
 cd yay-git/
 makepkg -si --noconfirm
+sudo yay -S polybar
 sudo systemctl enable lightdm
 echo "==========="
 echo "Terminado"
