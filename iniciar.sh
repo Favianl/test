@@ -7,7 +7,7 @@ cp -r .config/polybar ~/.config
 sudo chmod +x ~/.config/polybar/launch.sh
 cp .xprofile ~/
 cd /opt
-git clone https://aur.archlinux.org/yay-git.git
+sudo git clone https://aur.archlinux.org/yay-git.git
 sudo chown -R $USER:$USER yay-git
 cd yay-git/
 makepkg -si --noconfirm
