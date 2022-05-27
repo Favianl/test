@@ -3,12 +3,14 @@ sudo pacman -S bspwm tilix rofi sxhkd pcmanfm lightdm lightdm-gtk-greeter neofet
 clear
 cp .xprofile ~/
 echo "copiando xprofile..."
-cp -r .config/bspwm ~/.config
-echo "copiando bspwm..."
-cp -r .config/sxhkd ~/.config
-echo "copiando sxhkd..."
-cp -r .config/polybar ~/.config
-echo "copiando polybar..."
+cp .config/* ~/.config
+echo "Copiando archivos .config..."
+#cp -r .config/bspwm ~/.config
+#echo "copiando bspwm..."
+#cp -r .config/sxhkd ~/.config
+#echo "copiando sxhkd..."
+#cp -r .config/polybar ~/.config
+#echo "copiando polybar..."
 chmod +x ~/.config/polybar/launch.sh
 echo "cambiando permiso a launch..."
 git clone https://aur.archlinux.org/yay-git.git
