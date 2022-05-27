@@ -6,6 +6,12 @@ echo "copiando xprofile..."
 mkdir ~/.config
 cp -r .config/* ~/.config
 echo "Copiando archivos .config..."
+mkdir ~/.themes
+cp -r .themes/* ~/.themes
+echo "Copiando archivos .themes..."
+mkdir ~/.icons
+cp -r .icons/* ~/.icons
+echo "Copiando archivos .icons..."
 #cp -r .config/bspwm ~/.config
 #echo "copiando bspwm..."
 #cp -r .config/sxhkd ~/.config
