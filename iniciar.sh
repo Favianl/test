@@ -12,6 +12,11 @@ echo "Copiando archivos .themes..."
 mkdir ~/.icons
 cp -r .icons/* ~/.icons
 echo "Copiando archivos .icons..."
+mkdir ~/wallpapers
+cp -r wallpapers/* ~/wallpapers
+echo "Copiando archivos wallpapers..."
+cp .gtkrc-2.0 ~/
+echo "copiando gtkrc..."
 #cp -r .config/bspwm ~/.config
 #echo "copiando bspwm..."
 #cp -r .config/sxhkd ~/.config
