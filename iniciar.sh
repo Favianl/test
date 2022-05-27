@@ -6,19 +6,25 @@ cp -r .config/bspwm ~/.config
 echo "copiando bspwm..."
 cp -r .config/sxhkd ~/.config
 echo "copiando sxhkd..."
-#cp -r .config/polybar ~/.config
-#sudo chmod +x ~/.config/polybar/launch.sh
+cp -r .config/polybar ~/.config
+echo "copiando sxhkd..."
+chmod +x ~/.config/polybar/launch.sh
+echo "cambiando permiso a launch..."
 cp .xprofile ~/
 echo "copiando xprofile..."
-#git clone https://aur.archlinux.org/yay-git.git
+git clone https://aur.archlinux.org/yay-git.git
+echo "clonando yay..."
 #sudo chown -R $USER:$USER yay-git
 #cd yay-git/
 #makepkg -si --noconfirm
 #sudo yay -S polybar
 sudo systemctl enable lightdm
-echo "============="
-echo "| Terminado |"
-echo "============="
+echo "======Instalando Polybar======="
+echo "1 - sudo chown -R $USER:$USER yay-git"
+echo "2 - cd yay-git"
+echo "3 - makepkg -si"
+echo "4 - sudo yay -S polybar"
+echo "============FIN==============="
 
 
 
