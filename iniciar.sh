@@ -3,7 +3,8 @@ sudo pacman -S bspwm tilix rofi sxhkd pcmanfm lightdm lightdm-gtk-greeter neofet
 clear
 cp .xprofile ~/
 echo "copiando xprofile..."
-cp .config/* ~/.config
+mkdir ~/.config
+cp -r .config/* ~/.config
 echo "Copiando archivos .config..."
 #cp -r .config/bspwm ~/.config
 #echo "copiando bspwm..."
