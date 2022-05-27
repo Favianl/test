@@ -12,9 +12,9 @@ cp .xprofile ~/
 #makepkg -si --noconfirm
 #sudo yay -S polybar
 sudo systemctl enable lightdm
-echo "==========="
-echo "Terminado"
-echo "==========="
+echo "============="
+echo "| Terminado |"
+echo "============="
 
 
 
