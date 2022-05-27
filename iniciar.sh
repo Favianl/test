@@ -35,6 +35,9 @@ echo "instalando polybar"
 sudo yay -S polybar --noconfirm
 echo "habilitando lightdm (iniciar sesion)"
 sudo systemctl enable lightdm
+echo "clonando ohmybash..."
+git clone https://github.com/ohmybash/oh-my-bash.git ~/.oh-my-bash
+cp .bashrc ~/
 echo "cambiando idioma teclado..."
 sudo localectl set-x11-keymap es
 echo "============FIN==============="
