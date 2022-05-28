@@ -1,25 +1,25 @@
 #!/bin/bash
-sudo pacman -S bspwm tilix rofi sxhkd pcmanfm lightdm lightdm-gtk-greeter neofetch htop xf86-video-vesa xf86-video-ati xorg-server xorg-xinit mesa mesa-demos gvfs leafpad picom nitrogen lxappearance arandr neovim gnome-calculator lsd bat vlc pulseaudio pulseaudio-alsa pavucontrol gpicview evince network-manager-applet zip unzip  unrar firefox base-devel --noconfirm
+sudo pacman -S bspwm tilix rofi sxhkd pcmanfm lightdm lightdm-gtk-greeter neofetch htop xf86-video-vesa xf86-video-ati xorg-server xorg-xinit mesa mesa-demos gvfs leafpad picom nitrogen lxappearance arandr neovim gnome-calculator lsd bat vlc pulseaudio pulseaudio-alsa pavucontrol gpicview evince network-manager-applet zip unzip unrar firefox base-devel --noconfirm
 clear
 cp .xprofile ~/
 echo "copiando xprofile..."
 mkdir ~/.config
 cp -r .config/* ~/.config
-echo "Copiando archivos .config..."
-mkdir ~/.themes
-cp -r .themes/* ~/.themes
-echo "Copiando archivos .themes..."
-mkdir ~/.icons
-cp -r .icons/* ~/.icons
-echo "Copiando archivos .icons..."
-mkdir ~/wallpapers
-cp -r wallpapers/* ~/wallpapers
-echo "Copiando archivos wallpapers..."
-mkdir ~/.screenlayout
-cp -r .screenlayout/* ~/.screenlayout
-echo "Copiando archivos .screenlayout..."
-cp .gtkrc-2.0 ~/
-echo "copiando gtkrc..."
+#echo "Copiando archivos .config..."
+#mkdir ~/.themes
+#cp -r .themes/* ~/.themes
+#echo "Copiando archivos .themes..."
+#mkdir ~/.icons
+#cp -r .icons/* ~/.icons
+#echo "Copiando archivos .icons..."
+#mkdir ~/wallpapers
+#cp -r wallpapers/* ~/wallpapers
+#echo "Copiando archivos wallpapers..."
+#mkdir ~/.screenlayout
+#cp -r .screenlayout/* ~/.screenlayout
+#echo "Copiando archivos .screenlayout..."
+#cp .gtkrc-2.0 ~/
+#echo "copiando gtkrc..."
 #cp -r .config/bspwm ~/.config
 #echo "copiando bspwm..."
 #cp -r .config/sxhkd ~/.config
@@ -36,7 +36,7 @@ cd yay-git/
 echo "compilando yay"
 makepkg -si --noconfirm
 echo "instalando polybar"
-sudo yay -S polybar brave-bin rar --noconfirm
+sudo yay -S polybar brave-bin --noconfirm
 echo "habilitando lightdm (iniciar sesion)"
 sudo systemctl enable lightdm
 echo "clonando ohmybash..."
@@ -46,7 +46,12 @@ sudo localectl set-x11-keymap es
 echo "sincronizando hora y fecha..."
 sudo timedatectl set-ntp true
 rm ~/.bashrc
-cp .bashrc ~/
+cp -r home/* ~/
+echo "copiando archivos home..."
+#echo "backup config. de tilix"
+#dconf dump /com/gexperts/Tilix/ > tilix.dconf
+dconf load /com/gexperts/Tilix/ < tilix.dconf
+echo "copiando config. de tilix..."
 echo "============FIN==============="
 
 

@@ -1,0 +1,32 @@
+[/]
+quake-specific-monitor=0
+terminal-title-style='none'
+warn-vte-config-issue=false
+window-style='borderless'
+
+[profiles]
+default='335f1c99-d654-41e1-99c7-83bb55f9810c'
+list=['2b7c4080-0ddd-46c5-8f23-563fd3ba789d', '335f1c99-d654-41e1-99c7-83bb55f9810c']
+
+[profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+background-color='#171717'
+badge-color-set=false
+bold-color-set=false
+cursor-colors-set=false
+foreground-color='#DEDACF'
+highlight-colors-set=false
+palette=['#000000', '#FF615A', '#B1E969', '#EBD99C', '#5DA9F6', '#E86AFF', '#82FFF7', '#DEDACF', '#313131', '#F58C80', '#DDF88F', '#EEE5B2', '#A5C7FF', '#DDAAFF', '#B7FFF9', '#FFFFFF']
+use-theme-colors=false
+visible-name='Default'
+
+[profiles/335f1c99-d654-41e1-99c7-83bb55f9810c]
+background-color='#000000000000'
+background-transparency-percent=0
+badge-color-set=false
+bold-color-set=false
+cursor-colors-set=false
+foreground-color='#F7F7F7'
+highlight-colors-set=false
+palette=['#000000', '#C75646', '#8EB33B', '#D0B03C', '#72B3CC', '#C8A0D1', '#218693', '#B0B0B0', '#5D5D5D', '#E09690', '#CDEE69', '#FFE377', '#9CD9F0', '#FBB1F9', '#77DFD8', '#F7F7F7']
+use-theme-colors=false
+visible-name='mytilix'
