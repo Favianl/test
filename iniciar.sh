@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo pacman -S bspwm tilix rofi sxhkd pcmanfm lightdm lightdm-gtk-greeter neofetch htop xf86-video-vesa xf86-video-ati xorg-server xorg-xinit mesa mesa-demos gvfs leafpad picom nitrogen lxappearance arandr neovim gnome-calculator lsd bat vlc pulseaudio pulseaudio-alsa pavucontrol gpicview evince network-manager-applet zip unzip rar unrar firefox base-devel --noconfirm
+sudo pacman -S bspwm tilix rofi sxhkd pcmanfm lightdm lightdm-gtk-greeter neofetch htop xf86-video-vesa xf86-video-ati xorg-server xorg-xinit mesa mesa-demos gvfs leafpad picom nitrogen lxappearance arandr neovim gnome-calculator lsd bat vlc pulseaudio pulseaudio-alsa pavucontrol gpicview evince network-manager-applet zip unzip  unrar firefox base-devel --noconfirm
 clear
 cp .xprofile ~/
 echo "copiando xprofile..."
@@ -36,16 +36,17 @@ cd yay-git/
 echo "compilando yay"
 makepkg -si --noconfirm
 echo "instalando polybar"
-sudo yay -S polybar brave-bin --noconfirm
+sudo yay -S polybar brave-bin rar --noconfirm
 echo "habilitando lightdm (iniciar sesion)"
 sudo systemctl enable lightdm
 echo "clonando ohmybash..."
 git clone https://github.com/ohmybash/oh-my-bash.git ~/.oh-my-bash
-cp .bashrc ~/
 echo "cambiando idioma teclado..."
 sudo localectl set-x11-keymap es
 echo "sincronizando hora y fecha..."
 sudo timedatectl set-ntp true
+rm ~/.bashrc
+cp .bashrc ~/
 echo "============FIN==============="
 
 
