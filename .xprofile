@@ -1,2 +1,4 @@
+$HOME/.screenlayout/monitor-acer.sh
+nitrogen --restore &
 sxhkd &
 exec bspwm
