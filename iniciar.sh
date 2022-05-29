@@ -35,8 +35,11 @@ sudo chown -R $USER:$USER yay-git
 cd yay-git/
 echo "compilando yay"
 makepkg -si --noconfirm
+echo "volviendo a /test"
+cd ..
 echo "instalando polybar"
 sudo yay -S polybar brave-bin --noconfirm
+sudo yay -S brave-bin --noconfirm
 echo "habilitando lightdm (iniciar sesion)"
 sudo systemctl enable lightdm
 echo "clonando ohmybash..."
@@ -46,7 +49,7 @@ sudo localectl set-x11-keymap es
 echo "sincronizando hora y fecha..."
 sudo timedatectl set-ntp true
 rm ~/.bashrc
-cp -r home/* ~/
+cp -r home/. ~/
 echo "copiando archivos home..."
 #echo "backup config. de tilix"
 #dconf dump /com/gexperts/Tilix/ > tilix.dconf
