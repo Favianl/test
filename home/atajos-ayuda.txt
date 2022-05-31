@@ -1,0 +1,116 @@
+Atajos BSPWM:
+*********************************
+Super+ALT = Ampliar
+super+ALT+SHIFT = Reducir
+Super+TAB = Volver al anterior focus(escritorio)
+
+Atajos Tilix:
+*********************************
+CTRL+ALT+D = abrir nuevo abajo
+CTRL+ALT+R = abrir nuevo derecha
+CTRL+TAB = Moverse entre terminales
+SHIFT+CTRL+W = cerrar terminal actual
+
+
+
+
+Atajos VIM:
+*********************************
+Buscar Easymotion = L+s
+comentar = L+cc
+descomentar = L+cu
+
+gt = pestaña siguiente
+gT = pestaña anterior
+Numero+gt = pestaña Nº...
+
+CTRL+w+x Intercambia lugar ventana con la siguiente(dependiendo si están en vertical u horizontal)
+
+viw = seleccionar una palabra
+viwy = copiar palabra
+viwp = seleccionar y sobreescribir sobre una palabra
+
+diw = cortar palabra
+
+d = cortar linea
+yy = copiar una linea
+SHIFT+v + p = pegar sobre una linea
+
+. = en modo normal pega la última inserción hecha
+
+
+
+CTRL+v>selecLineas>SHIFT+(i or a)>inserText>Esc = Insertar mismo texto en misma columna en multiples lineas
+CTRL+v>selecText>c>inserText>Esc = Reemplazar mismo texto en misma columna en multiples lineas
+
+CTRL+n Bajar selección de autocompletado
+CTRL+p Subir selección de autocompletado
+CTRL+y Seleccionar opción de autocompletado
+CTRL+e salir de menu de autocompletado
+
+vit = Seleccionar todo el contenido entre etiquetas(ejm. <div>[contendido]</div>)
+vat = Seleccionar de etiqueta a etiqueta(ejm. [<div>contendido</div>])
+
+
+CTRL+f = Desplazarse un Viewport hacia abajo como PageDown
+CTRL+b = Desplazarse un Viewport hacia arriba como PageUp
+CTRL+d = Desplazarse medio Viewport hacia abajo 
+CTRL+u = Desplazarse medio Viewport hacia arriba  
+CTRL+e = Desplazar Viewport una linea hacia abajo 
+CTRL+y = Desplazar Viewport una linea hacia arriba  
+% = moverse entre apertura o cierre de:<>,{},[],()
+NerdTree = L+nt: 
+----------------
+o = abre archivo sobre el ultimo focus, cierra el tree  y focus en archivo
+go = abre archivo sobre el ultimo focus y ahora focus en tree
+
+t = abre archivo en pestaña, cierra el tree  y focus en archivo
+T= abre archivo en pesaña, se mantiene en tree y focus en tree
+
+i = abre archivo en pestaña apilandose horizontal y focus en archivo
+gi = abre archivo en pestaña apilandose horizontal y focus en tree
+
+s = abre archivo en pestaña apilandose vertical y focus en archivo
+gs = abre archivo en pestaña apilandose vertical y focus en tree
+
+o = desplegar directorio
+O = desplegar directorio y subdirectorios
+
+x = contraer directorio al directorio padre
+e = abrir directorio aparte
+
+m = Opciones: crear, eliminar, mover, etc. del nodo actual
+
+
+" TMUX Atajos:
+*************
+" CTRL+[h,j,k,l] cambiar entre ventanas
+
+
+Multiple Cursors:
+*****************
+CTRL+n = seleccionar coincidencias
+c+NuevoTexto = Borrar y escribir en todos los campos
+SHIFT+a = Escribir en la parte final de todas las coincidencias
+SHIFT+i = Escribir en la parte inicial de todas las coincidencias
+
+
+contraer y mostrar codigo:
+*************************
+
+zf = esconder bloque seleccionado y guardar
+za = toggle: mostrar o esconder bloque guardado
+zo = mostrar bloque guardado
+zc = esconder bloque guardado
+
+
+
+
+
+
+Firefox:
+*******
+
+CTRL+t = Abrir nueva pestaña
+CTRL+w = Cerrar pestaña actual
+CTRL+TAB = Moverse entre pestañas

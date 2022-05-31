@@ -14,6 +14,21 @@ super + @space
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# Mis atajos ocupados(i,o,m,g,y,h,f,b,l,c,p,b)
+super + a
+					leafpad ~/atajos-ayuda.txt
+
+super + f
+					pcmanfm
+
+super + b
+					brave
+
+super + c
+					bspc rule -a gnome-calculator -o state=floating; gnome-calculator
+
+alt + l
+					leafpad
 #
 # bspwm hotkeys
 #
@@ -119,3 +134,48 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+
+
+
+
+
+# Volume control - Teclado mecanico halion
+
+KP_Add
+      pamixer --increase 5
+
+KP_Subtract
+      pamixer --decrease 5
+
+KP_Enter
+      pamixer --toggle-mute
+
+
+# Volume control
+
+#XF86AudioRaiseVolume
+#      pamixer --increase 5
+
+#XF86AudioLowerVolume
+#      pamixer --decrease 5
+
+#XF86AudioMute
+#      pamixer --toggle-mute
+	
+# Music control
+#XF86Audio{Next,Prev,Play,Stop}
+#	mpc {next,prev,toggle,stop}
+
+
+
+# Captura de pantalla
+super + Print
+	import -window root ~/Pictures/$(date '+%Y%m%d-%H%M%S').jpg
+# Capturar un area, 2 veces .. bug?
+Print
+	import root ~/Pictures/$(date '+%Y%m%d-%H%M%S').jpg
+
+
+
+

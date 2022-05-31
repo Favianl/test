@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo pacman -S bspwm tilix rofi sxhkd pcmanfm lightdm lightdm-gtk-greeter neofetch htop xf86-video-vesa xf86-video-ati xorg-server xorg-xinit mesa mesa-demos gvfs leafpad picom nitrogen lxappearance arandr neovim gnome-calculator lsd bat vlc pulseaudio pulseaudio-alsa pavucontrol gpicview evince network-manager-applet zip unzip unrar firefox base-devel --noconfirm
+sudo pacman -S bspwm tilix rofi sxhkd pcmanfm lightdm lightdm-gtk-greeter neofetch htop xf86-video-vesa xf86-video-ati xorg-server xorg-xinit xorg-dev mesa mesa-demos gvfs leafpad picom nitrogen lxappearance arandr neovim gnome-calculator lsd bat vlc pulseaudio pulseaudio-alsa pavucontrol pamixer gpicview evince network-manager-applet zip unzip unrar firefox base-devel yad xdotool ttf-roboto-mono ttf-dejavu imagemagick drawing inkscape redshift tree --noconfirm
 clear
 cp .xprofile ~/
 echo "copiando xprofile..."
@@ -38,7 +38,7 @@ makepkg -si --noconfirm
 echo "volviendo a /test"
 cd ..
 echo "instalando polybar"
-sudo yay -S polybar brave-bin --noconfirm
+sudo yay -S polybar nerd-fonts-mononoki --noconfirm
 sudo yay -S brave-bin --noconfirm
 echo "habilitando lightdm (iniciar sesion)"
 sudo systemctl enable lightdm
@@ -51,6 +51,7 @@ sudo timedatectl set-ntp true
 rm ~/.bashrc
 cp -r home/. ~/
 echo "copiando archivos home..."
+chmod +x ~/popup-calendar.sh
 #echo "backup config. de tilix"
 #dconf dump /com/gexperts/Tilix/ > tilix.dconf
 dconf load /com/gexperts/Tilix/ < tilix.dconf

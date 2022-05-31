@@ -1,4 +1,8 @@
 $HOME/.screenlayout/monitor-acer.sh
 nitrogen --restore &
+redshift &
+xmodmap -e "keycode 135 = Super_L NoSymbol Super_L" &
+xset s off &
+xset -dpsms &
 sxhkd &
 exec bspwm

@@ -4,7 +4,7 @@
 include "/home/leo/.gtkrc-2.0.mine"
 gtk-theme-name="Material-Black-Blueberry-4.0"
 gtk-icon-theme-name="Blueberry-Numix-2021"
-gtk-font-name="Cantarell 11"
+gtk-font-name="DejaVu Sans Mono 11"
 gtk-cursor-theme-name="capitaine-cursors"
 gtk-cursor-theme-size=0
 gtk-toolbar-style=GTK_TOOLBAR_BOTH

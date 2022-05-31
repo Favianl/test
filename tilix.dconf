@@ -1,4 +1,5 @@
 [/]
+prompt-on-delete-profile=true
 quake-specific-monitor=0
 terminal-title-style='none'
 warn-vte-config-issue=false
@@ -16,17 +17,22 @@ cursor-colors-set=false
 foreground-color='#DEDACF'
 highlight-colors-set=false
 palette=['#000000', '#FF615A', '#B1E969', '#EBD99C', '#5DA9F6', '#E86AFF', '#82FFF7', '#DEDACF', '#313131', '#F58C80', '#DDF88F', '#EEE5B2', '#A5C7FF', '#DDAAFF', '#B7FFF9', '#FFFFFF']
+terminal-bell='icon-sound'
 use-theme-colors=false
 visible-name='Default'
 
 [profiles/335f1c99-d654-41e1-99c7-83bb55f9810c]
 background-color='#000000000000'
-background-transparency-percent=0
+background-transparency-percent=23
+badge-color='#AC7EA8'
 badge-color-set=false
 bold-color-set=false
 cursor-colors-set=false
-foreground-color='#F7F7F7'
+dim-transparency-percent=0
+font='mononoki Nerd Font 12'
+foreground-color='#A1B0B8'
 highlight-colors-set=false
-palette=['#000000', '#C75646', '#8EB33B', '#D0B03C', '#72B3CC', '#C8A0D1', '#218693', '#B0B0B0', '#5D5D5D', '#E09690', '#CDEE69', '#FFE377', '#9CD9F0', '#FBB1F9', '#77DFD8', '#F7F7F7']
+palette=['#252525', '#FF5252', '#C3D82C', '#FFC135', '#42A5F5', '#D81B60', '#00ACC1', '#F5F5F5', '#708284', '#FF5252', '#C3D82C', '#FFC135', '#42A5F5', '#D81B60', '#00ACC1', '#F5F5F5']
+use-system-font=false
 use-theme-colors=false
 visible-name='mytilix'
