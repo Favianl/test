@@ -1,10 +1,8 @@
 #!/bin/bash
-sudo pacman -S bspwm tilix rofi sxhkd pcmanfm lightdm lightdm-gtk-greeter neofetch htop xf86-video-vesa xf86-video-ati xorg-server xorg-xinit xorg-dev mesa mesa-demos gvfs leafpad picom nitrogen lxappearance arandr neovim gnome-calculator lsd bat vlc pulseaudio pulseaudio-alsa pavucontrol pamixer gpicview evince network-manager-applet zip unzip unrar firefox base-devel yad xdotool ttf-roboto-mono ttf-dejavu imagemagick drawing inkscape redshift tree --noconfirm
+sudo pacman -S bspwm tilix rofi sxhkd pcmanfm lightdm lightdm-gtk-greeter neofetch htop xf86-video-vesa xf86-video-ati xorg-server xorg-xinit xorg-xev mesa mesa-demos gvfs leafpad picom nitrogen lxappearance arandr neovim gnome-calculator lsd bat vlc pulseaudio pulseaudio-alsa pavucontrol pamixer gpicview evince network-manager-applet zip unzip unrar firefox base-devel yad xdotool ttf-roboto-mono ttf-dejavu imagemagick drawing inkscape redshift tree --noconfirm
 clear
-cp .xprofile ~/
-echo "copiando xprofile..."
-mkdir ~/.config
-cp -r .config/* ~/.config
+#cp .xprofile ~/
+#echo "copiando xprofile..."
 #echo "Copiando archivos .config..."
 #mkdir ~/.themes
 #cp -r .themes/* ~/.themes
@@ -26,6 +24,8 @@ cp -r .config/* ~/.config
 #echo "copiando sxhkd..."
 #cp -r .config/polybar ~/.config
 #echo "copiando polybar..."
+mkdir ~/.config
+cp -r .config/* ~/.config
 chmod +x ~/.config/polybar/launch.sh
 chmod +x ~/.screenlayout/monitor-acer.sh
 echo "cambiando permiso a launch..."
