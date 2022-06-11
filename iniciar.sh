@@ -22,14 +22,15 @@ chmod +x ~/popup-calendar.sh
 #backup config. de tilix
 #dconf dump /com/gexperts/Tilix/ > tilix.dconf
 dconf load /com/gexperts/Tilix/ < tilix.dconf
-yay -S nerd-fonts-mononoki brave-bin --noconfirm
 sudo pacman -S ttf-roboto-mono python3 python-pip locate stylua --noconfirm
+yay -S nerd-fonts-mononoki --noconfirm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-# nvm install v16.15.1
-# nvm install v18.3.0
-# nvm use v16.15.1 
+nvm install v16.15.1
+nvm install v18.3.0
+nvm use v16.15.1 
 # sudo pacman -S npm --noconfirm
 # sudo npm install -g prettier
+# yay -S brave-bin --noconfirm
 echo "============FIN==============="
 
 
