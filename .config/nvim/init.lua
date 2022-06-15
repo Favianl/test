@@ -1,6 +1,6 @@
+require("packer-plug")
 require("settings")
 require("mappings")
-require("packer-plug")
 require("tree")
 require("lsp")
 require("lsp.null-ls")
