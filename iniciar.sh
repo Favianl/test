@@ -4,9 +4,11 @@ clear
 mkdir ~/.config
 mkdir ~/Pictures
 cp -r .config/* ~/.config
+git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+mv ~/.config/nvim/user ~/.config/nvim/lua
 chmod +x ~/.config/polybar/launch.sh
 git clone https://aur.archlinux.org/yay-git.git
-sudo chown -R $USER:$USER yay-git
+# sudo chown -R $USER:$USER yay-git
 cd yay-git/
 makepkg -si --noconfirm
 cd ..
@@ -25,12 +27,7 @@ dconf load /com/gexperts/Tilix/ < tilix.dconf
 sudo pacman -S ttf-roboto-mono python3 python-pip locate stylua --noconfirm
 yay -S nerd-fonts-mononoki --noconfirm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-nvm install v16.15.1
-nvm install v18.3.0
-nvm use v16.15.1 
-# sudo pacman -S npm --noconfirm
-# sudo npm install -g prettier
-# yay -S brave-bin --noconfirm
+# reboot
 echo "============FIN==============="
 
 
