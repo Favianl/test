@@ -5,14 +5,13 @@ mkdir ~/.config
 mkdir ~/Pictures
 cp -r .config/* ~/.config
 git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-mv ~/.config/nvim/user ~/.config/nvim/lua
 chmod +x ~/.config/polybar/launch.sh
 git clone https://aur.archlinux.org/yay-git.git
-# sudo chown -R $USER:$USER yay-git
 cd yay-git/
 makepkg -si --noconfirm
 cd ..
-sudo yay -S polybar --noconfirm 
+sudo yay -S polybar --noconfirm
+sudo pacman -S ttf-roboto-mono python3 python-pip locate stylua --noconfirm 
 sudo systemctl enable lightdm
 git clone https://github.com/ohmybash/oh-my-bash.git ~/.oh-my-bash
 sudo localectl set-x11-keymap es
@@ -24,7 +23,6 @@ chmod +x ~/popup-calendar.sh
 #backup config. de tilix
 #dconf dump /com/gexperts/Tilix/ > tilix.dconf
 dconf load /com/gexperts/Tilix/ < tilix.dconf
-sudo pacman -S ttf-roboto-mono python3 python-pip locate stylua --noconfirm
 yay -S nerd-fonts-mononoki --noconfirm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 # reboot
