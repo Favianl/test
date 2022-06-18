@@ -1,0 +1,27 @@
+sudo pacman -Syu
+
+sudo pacman -S qemu qemu-arch-extra edk2-ovmf libvirt ebtables dnsmasq bridge-utils virt-manager openbsd-netcat
+
+sudo gpasswd -a nombreUsuario kvm
+
+sudo gpasswd -a nombreUsuario polkitd
+
+sudo modprobe kvm-amd (Para amd) 
+sudo modprobe kvm-intel (Para intel)
+
+sudo modprobe kvm
+
+sudo systemctl enable libvirtd.service
+sudo systemctl start libvirtd.service
+
+sudo nano /etc/polkit-1/rules.d/50-org.libvirt.unix.manage.rules
+
+Codigo:
+
+polkit.addRule(function(action, subject) {
+    if (action.id == "org.libvirt.unix.manage" &&
+        subject.user == "nombreUsuario") {
+        return polkit.Result.YES;
+    }
+});
+
