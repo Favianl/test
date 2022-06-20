@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo pacman -S bspwm tilix rofi sxhkd pcmanfm neofetch htop xf86-video-vesa xf86-video-ati xf86-video-amdgpu vulkan-radeon vulkan-icd-loader xorg-server xorg-xinit xorg-xev xorg mesa mesa-demos gvfs leafpad picom nitrogen lxappearance arandr neovim gnome-calculator lsd bat vlc pulseaudio pulseaudio-alsa pavucontrol pamixer gpicview evince network-manager-applet zip unzip unrar firefox base-devel yad xdotool ttf-dejavu imagemagick drawing inkscape redshift tree xclip --noconfirm
+sudo pacman -S bspwm tilix rofi sxhkd pcmanfm neofetch htop xf86-video-vesa xf86-video-ati xf86-video-amdgpu vulkan-radeon vulkan-icd-loader xorg-server xorg-xinit xorg-xev xorg mesa mesa-demos gvfs leafpad picom nitrogen lxappearance lxsession arandr neovim gnome-calculator lsd bat vlc pulseaudio pulseaudio-alsa pavucontrol pamixer gpicview evince network-manager-applet zip unzip unrar firefox base-devel yad xdotool ttf-dejavu imagemagick drawing inkscape redshift tree xclip --noconfirm
 clear
 mkdir ~/.config
 mkdir ~/Pictures
